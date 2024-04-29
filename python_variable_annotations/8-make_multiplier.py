@@ -8,6 +8,7 @@ from typing import Callable
 
 
 def make_multiplier(multiplier: float) -> Callable[[float], float]:
+    """Returns function that takes float as an arg and returns float"""
     def inner(value: float) -> float:
         return value * multiplier
 
