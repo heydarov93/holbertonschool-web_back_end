@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Module that contains type-annotated function
 that returns the string representation of the float

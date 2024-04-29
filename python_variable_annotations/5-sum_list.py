@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module that contains type-annotated function sum_list
 which takes a list input_list of floats as argument and

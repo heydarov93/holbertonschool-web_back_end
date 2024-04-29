@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module that contains type-annotated function that takes
 a string and an int OR float as arguments and returns a tuple.

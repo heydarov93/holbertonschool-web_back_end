@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 The module that contains type-annotated function that
 takes a float as argument and returns a function that
