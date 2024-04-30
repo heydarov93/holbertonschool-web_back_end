@@ -3,7 +3,7 @@
 coroutine that waits for a random delay between 0
 and max_delay seconds and returns it."""
 from random import uniform
-from asyncio import sleep
+import asyncio
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -13,5 +13,5 @@ async def wait_random(max_delay: int = 10) -> float:
     seconds and returns it.
     """
     delay_time = uniform(0, max_delay)
-    await sleep(delay_time)
+    await asyncio.sleep(delay_time)
     return delay_time
