@@ -1,8 +1,8 @@
 export default class HolbertonCourse {
   constructor(name, length, students) {
-    this._name = name;
-    this._length = length;
-    this._students = students;
+    this.name = name;
+    this.length = length;
+    this.students = students;
   }
 
   get name() {
@@ -32,9 +32,15 @@ export default class HolbertonCourse {
   }
 
   set students(students = []) {
-    const allElementsString = students.every((el) => typeof el === 'string');
+    let allElementsString = false;
 
-    if (!allElementsString) throw new TypeError('Length must be a number');
+    if (Array.isArray(students)) {
+      allElementsString = students.every((el) => typeof el === 'string');
+    }
+
+    if (!allElementsString) {
+      throw new TypeError('Students must be a list of strings');
+    }
 
     this._students = students;
   }
